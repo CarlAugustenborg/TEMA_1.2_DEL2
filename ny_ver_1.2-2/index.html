@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>skabelon</title>
+<script src="https://kit.fontawesome.com/80a8fd110f.js" crossorigin="anonymous"></script>
 <link href="skabelon.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="menu.css">
@@ -11,37 +12,56 @@
 
 <body>
 	
-	<div id="wrapper">
+<div id="wrapper">
 	
-	 <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="#">Forside</a></li>
-            <li><a href="#">Holdtilmelding</a></li>
-            <li><a href="#">Aktiviteter</a></li>
-            <li><a href="#">Om os</a></li>
-			<li><a href="#">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+	<nav role="navigation">
+  <div id="menuToggle">
+
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+
+    <ul id="menu">
+      <a href="index.html"><li>Hjem</li></a>
+      <a href="#"><li>Om os</li></a>
+      <a href="#"><li>Praktisk</li></a>
+      <a href="#"><li>Priser</li></a>
+	  <a href="tilmeld.html"><li>Tilmeld</li></a>
+    </ul>
   </div>
+  <h1 id="logo">Hopla</h1>
+</nav>
 		
 	<header>
-		<h1>HEADER</h1>
+		
 	</header>
 	
-		<section><h2>SECTION</h2></section>
-		<article><h2>ARTICLE</h2></article>
-		<aside><h2>ASIDE</h2></aside>
+		<main>
+			 
+		</main>
 	
 	
 	<footer>
-		<h2>FOOTER</h2>
+		<h4 class="footermail">springgymnastik@hopla.dk</h4>
+		<a class="fab" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+		<a class="fab" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
 	</footer>
 	</div> <!-- END WRAPPER-->
 </body>

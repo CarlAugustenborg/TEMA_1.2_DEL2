@@ -1,160 +1,152 @@
 @charset "UTF-8";
 /* CSS Document */
+/* --------NAV-BURGER----------------*/
 
-body {
-	background-color: #D48C2E;
-}
-.menu-wrap {
-  position: fixed; 
-  top: 0em;
-  left: 0;
-  z-index: 1;
+#logo{
+	text-align: center;
+	position: relative;
+	top: -37px;
+	color: #FF6002;
 }
 
-.menu-wrap .toggler {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  cursor: pointer;
-  width: 4rem; /*størrelse på usynlig klikbar knap*/
-  height: 5rem; /*størrelse på usynlig klikbar knap*/
-  opacity: 0;
-}
-
-.menu-wrap .hamburger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 1.5em; /*størrelse på synlig knap*/
-  height: 3em; /*størrelse på synlig knap*/
-  padding: 1rem;
-  background: blue; /*vælg farve til baggrunden på knappen*/ display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Hamburger Linje  */
-.menu-wrap .hamburger > div {
-  position: relative;
-  flex: none;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-/* Hamburger linjer toppen og bunden */
-.menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
-}
-
-/* rykker den ene linje ned under midten */
-.menu-wrap .hamburger > div::after {
-  top: 10px;
-}
-
-/* animerer linjer når der bliver klikket så de roterer  */
-.menu-wrap .toggler:checked + .hamburger > div {
-  transform: rotate(135deg);
-}
-
-/* animerer top og bund linjer til at dreje 90 grader til et kryds*/
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-/* roterer ved hover når knappen er trykket op  */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
-}
-
-/* viser menu når der klikkes på knappen */
-.menu-wrap .toggler:checked ~ .menu {
-  visibility: visible;
-}
-/*viser menu langsomt og bliver langsomt større*/
-.menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration:0.75s;
-}
-/* viser div med selve links i */
-.menu-wrap .toggler:checked ~ .menu > div > div {
-  opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
-}
-
-/*styler hvordan menu ser ud når der er trykket */
-.menu-wrap .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden; /*skjuler den indtil der trykkes*/
-  overflow: hidden; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-wrap .menu > div {
-  background:rgba(227,76,14,0.50); /*farve på menu når den åbener*/
-  /*border-radius: 50%;*/
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0); /*kommer ud fra midten */
-  transition: all 0.4s ease; /*forsinker visning en smule*/
-}
-
-/*div hvor links er i*/
-.menu-wrap .menu > div > div {
-  text-align: center;
-  max-width: 100%;
-  max-height: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-/*styler liste elementerne*/
-.menu-wrap .menu > div > div > ul > li {
-  list-style: none;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-
-/*styler links i menu*/
-.menu-wrap .menu > div > div > ul > li > a {
-  color: white;
+a
+{
   text-decoration: none;
-  transition: color 0.4s ease;
+  color: #FF6002;
+  
+  transition: color 0.3s ease;
 }
 
+a:hover
+{
+  color: tomato;
+}
 
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 8px;
+  left: 5px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
 
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
 
-	
-	
-	
-	
-	
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #FF6002;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
 
