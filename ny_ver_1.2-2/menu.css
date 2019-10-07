@@ -1,12 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
-	background-color: #D48C2E;
-}
+
 .menu-wrap {
   position: fixed;
-  top: 4em;
+  top: 0em;
   left: 0;
   z-index: 1;
 }

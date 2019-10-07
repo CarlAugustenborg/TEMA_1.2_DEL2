@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@charset "utf-8";
-/* CSS Document */
-
-
 
 body{
 	margin: 0;
@@ -13,11 +9,11 @@ body{
 #wrapper{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-auto-rows: minmax(92px, auto);
+  grid-auto-rows: minmax(80px, auto);
 }
 
 .menu-wrap{
-	grid-column: 1/1;
+	grid-column: 1/2;
 	grid-row: 1;
 	background-color:#67A464;
 }
@@ -58,7 +54,7 @@ footer{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(80px, auto);
 }
 
 .menu-wrap{
