@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #D48C2E;
+}
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: blue; /*vælg farve til baggrunden på knappen*/ display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Linje  */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger linjer toppen og bunden */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* rykker den ene linje ned under midten */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* animerer linjer når der bliver klikket så de roterer  */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* animerer top og bund linjer til at dreje 90 grader til et kryds*/
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* roterer ved hover når knappen er trykket op  */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* viser menu når der klikkes på knappen */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+/*viser menu langsomt og bliver langsomt større*/
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration:0.75s;
+}
+/* viser div med selve links i */
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+
+/*styler hvordan menu ser ud når der er trykket */
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden; /*skjuler den indtil der trykkes*/
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background:rgba(227,76,14,0.50); /*farve på menu når den åbener*/
+  /*border-radius: 50%;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0); /*kommer ud fra midten */
+  transition: all 0.4s ease; /*forsinker visning en smule*/
+}
+
+/*div hvor links er i*/
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/*styler liste elementerne*/
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/*styler links i menu*/
+.menu-wrap .menu > div > div > ul > li > a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
