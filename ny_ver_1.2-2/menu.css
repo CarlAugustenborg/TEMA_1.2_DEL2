@@ -150,17 +150,7 @@ body {
 
 
 
-@media only screen and (min-width: 600px) {
-	
-	.menu-wrap .hamburger {
-  
-  width: 3em; /*størrelse på synlig knap*/
-  height: 10em; /*størrelse på synlig knap*/
-  padding: 1rem;
-  background: red; /*vælg farve til baggrunden på knappen*/
 
-}
-	
 	
 	
 	
