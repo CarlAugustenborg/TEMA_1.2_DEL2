@@ -75,6 +75,14 @@ footer{
 	margin-left: 2%;
 }
 
+nav{
+	border: solid transparent 2px;
+	border-bottom-color: #707070;
+	height: 40px;
+	grid-column: 1/5;
+	grid-row: 1;
+}
+
 
 @media only screen and (min-width: 600px) {
 	
