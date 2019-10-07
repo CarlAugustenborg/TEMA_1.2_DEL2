@@ -11,19 +11,16 @@ header img {
 	
 }
 
-#tildmeldsec {
-	display:grid;
-	grid-template-columns:  1fr 1fr 1fr 1fr;
-}
+
 .containertilmeld {
-	background:rgba(247,0,4,1.00);
+	background:rgba(255,140,0,0.50);
 	border-radius: 5px;
 	padding:3em;
 	margin-bottom: 6em;
 }
 
 .artikel4 {
-	grid-column: 1 / 5;
+	
 	margin-right: 3rem;
 	margin-left: 3rem;
 }
@@ -37,8 +34,8 @@ header img {
 .containertilmeld input[type=submit] {
 	display: block;
 	Padding:1em;
-	background-color: #00B4CC;
-	border-radius: 25px;
+	background-color: rgba(255,140,0,1.00);
+	border-radius: 5px;
 	width: 7em;
 	margin-right: auto;
 	margin-left: auto;
@@ -47,7 +44,7 @@ header img {
 
 
 .containertilmeld input[type=submit]:hover {
-	background-color:#005F6B;
+	background-color:rgba(255,140,0,1.00)
 }
 
 .containertilmeld input[type=text], input[type=tel], input[type=email], input[type=date]{
@@ -57,6 +54,27 @@ header img {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
+
+footer{
+	grid-column: 1/5;
+	grid-row: 4;
+	border: solid transparent 2px;
+	border-top-color: #707070;
+	color: #707070;	
+	display: flex;
+}
+
+.footermail{
+	flex: 0;
+	margin-right: 15%;
+}
+
+.fab{
+	line-height: 1.8;
+	font-size: 1.5em;
+	margin-left: 2%;
+}
+
 
 @media only screen and (min-width: 600px) {
 	
