@@ -61,33 +61,7 @@ display: none;
 }
 
 
-footer{
-	grid-column: 1/5;
-	grid-row: 4;
-	border: solid transparent 2px;
-	border-top-color: #707070;
-	color: #707070;	
-	display: flex;
-}
 
-.footermail{
-	flex: 0;
-	margin-right: 15%;
-}
-
-.fab{
-	line-height: 1.8;
-	font-size: 1.5em;
-	margin-left: 2%;
-}
-
-nav{
-	border: solid transparent 2px;
-	border-bottom-color: #707070;
-	height: 40px;
-	grid-column: 1/5;
-	grid-row: 1;
-}
 
 
 @media (min-width: 600px) {
