@@ -60,6 +60,11 @@ display: none;
 	color:black;
 }
 
+.tilmeldheader h2{
+	color:rgba(255,140,0,1.00);
+	text-align: center;
+}
+
 
 
 
