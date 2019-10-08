@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*tilmeld css*/
+
+
+header img {
+	width:80%;
+	height: 250px;
+	
+}
+
+
+.containertilmeld {
+	background:rgba(255,140,0,0.50);
+	border-radius: 5px;
+	padding:3em;
+	margin-bottom: 6em;
+}
+
+.artikel4 {
+	
+	margin-right: 3rem;
+	margin-left: 3rem;
+}
+
+.artikel4 h2 {
+	
+	text-align: center;
+} 
+
+/*knap */
+.containertilmeld input[type=submit] {
+	display: block;
+	Padding:1em;
+	background-color: rgba(255,140,0,1.00);
+	border-radius: 5px;
+	width: 7em;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+
+.containertilmeld input[type=submit]:hover {
+	background-color:rgba(255,140,0,1.00)
+}
+
+.containertilmeld input[type=text], input[type=tel], input[type=email], input[type=date]{
+	width:100%;
+	margin-top:1em;
+	margin-bottom: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+footer{
+	grid-column: 1/5;
+	grid-row: 4;
+	border: solid transparent 2px;
+	border-top-color: #707070;
+	color: #707070;	
+	display: flex;
+}
+
+.footermail{
+	flex: 0;
+	margin-right: 15%;
+}
+
+.fab{
+	line-height: 1.8;
+	font-size: 1.5em;
+	margin-left: 2%;
+}
+
+nav{
+	border: solid transparent 2px;
+	border-bottom-color: #707070;
+	height: 40px;
+	grid-column: 1/5;
+	grid-row: 1;
+}
+
+
+@media only screen and (min-width: 600px) {
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
