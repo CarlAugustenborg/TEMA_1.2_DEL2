@@ -106,11 +106,11 @@ display: none;
 		margin-bottom: auto;
 		grid-column: 1 / 4;
 		display: block;
-		width:200px;
-	}
-	
-	nav img {
+		border-style:solid;
+		border-color: rgba(255,140,0,1.00);
 		
 	}
+	
+	
 	
 }
