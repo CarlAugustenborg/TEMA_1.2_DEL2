@@ -203,26 +203,29 @@ footer{
 
 
 @media only screen and (min-width: 600px) {
-#menuToggle span
+
+	#menuToggle span
 {
-  display: block;
+ 
   width: 66px;
   height: 8px;
   margin-bottom: 8px;
-	margin-top: 8px;
-  position: relative;
-  
-  background: #FFA500;
-  border-radius: 3px;
-  
+margin-top: 8px;
   z-index: 1;
   
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
 }	
+	
+	
+	#menuToggle input
+{
+  
+  width: 66px;
+  height: 66px;
+  top: -7px;
+  left: -5px;
+	cursor: pointer;
+  
+}
 	
 	nav{
 	border: solid transparent 2px;
