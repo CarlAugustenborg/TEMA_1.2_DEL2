@@ -10,25 +10,10 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    /*grid-auto-rows: minmax(100px, auto);*/
 }
 
-nav{
-	border: solid transparent 2px;
-	border-bottom-color: #707070;
-	height: 40px;
-	grid-column: 1/5;
-	grid-row: 1;
-}
-nav img {
-	max-height: 44px;
-	margin-top: -9px;
-}
 
-header{
-	grid-column: 1/5;
-	grid-row: 0;
-}
 main h2 {
 	text-align: center;
 	color:#FFA500
@@ -51,28 +36,7 @@ main img {
 	border-color:#FFA500
 }
 
-footer{
-	grid-column: 1/5;
-	grid-row: 3;
-	border: solid transparent 2px;
-	border-top-color: #707070;
-	color: black;	
-	display: flex;
-	background-color: #FFA500
-}
-
-.footermail{
-	flex: 0;
-	margin-right: 15%;
-}
-
-.fab{
-	line-height: 1.8;
-	font-size: 1.5em;
-	margin-left: 2%;
-	color: black;
-}
-		
+	
 
 @media only screen and (min-width: 600px) {
 	
@@ -87,21 +51,7 @@ footer{
 	grid-column: 2/4;
 	grid-row: 1;
 }
-nav{
-	border: solid transparent 2px;
-	border-bottom-color: #707070;
-	height: 80px;
-	grid-column: 1/5;
-	grid-row: 1;
-}
-nav img {
-	max-height: 80px;
-	margin-top: -35px;
-}
-header{
-	grid-column: 2/4;
-	grid-row: 2;
-}
+
 
 
 section{
@@ -121,11 +71,7 @@ aside{
 	grid-row: 3/5;
 }
 
-footer{
-	grid-column: 1/5;
-	grid-row: 5;
-}
-		
+	
 
 main img {
     float: right;
