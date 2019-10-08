@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body{
+	margin: 0;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+nav{
+	border: solid transparent 2px;
+	border-bottom-color: #707070;
+	height: 40px;
+	grid-column: 1/5;
+	grid-row: 1;
+}
+nav img {
+	max-height: 44px;
+	margin-top: -9px;
+}
+
+header{
+	grid-column: 1/5;
+	grid-row: 0;
+}
+main h2 {
+	text-align: center;
+	color:#FFA500
+}
+p {
+	text-align: center;
+}
+.bold {
+	font-weight: bold;
+	color:#FFA500
+}
+main{
+	grid-column: 1/5;
+	grid-row: 2;
+}
+main img {
+	max-width: 99%;
+	max-height: auto;
+	border-style: solid;
+	border-color:#FFA500
+}
+
+footer{
+	grid-column: 1/5;
+	grid-row: 3;
+	border: solid transparent 2px;
+	border-top-color: #707070;
+	color: black;	
+	display: flex;
+	background-color: #FFA500
+}
+
+.footermail{
+	flex: 0;
+	margin-right: 15%;
+}
+
+.fab{
+	line-height: 1.8;
+	font-size: 1.5em;
+	margin-left: 2%;
+	color: black;
+}
+		
+
+@media only screen and (min-width: 600px) {
+	
+#wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(80px, auto);
+}
+
+.menu-wrap{
+	grid-column: 2/4;
+	grid-row: 1;
+}
+nav{
+	border: solid transparent 2px;
+	border-bottom-color: #707070;
+	height: 80px;
+	grid-column: 1/5;
+	grid-row: 1;
+}
+nav img {
+	max-height: 80px;
+	margin-top: -35px;
+}
+header{
+	grid-column: 2/4;
+	grid-row: 2;
+}
+
+
+section{
+	grid-column: 2/3;
+	grid-row: 3;
+}
+main{
+	grid-column: 2/4;
+	grid-row: 2;
+}
+article{
+	grid-column: 2/3;
+	grid-row: 4;
+}
+aside{
+	grid-column: 3/4;
+	grid-row: 3/5;
+}
+
+footer{
+	grid-column: 1/5;
+	grid-row: 5;
+}
+		
+
+main img {
+    float: right;
+    margin-top: -350px;
+}
+}
+/*tilmeld css*/
+
+#tildmeldsec {
+	display:grid;
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+}
+.containertilmeld {
+	background:rgba(247,0,4,1.00);
+	border-radius: 5px;
+	padding:3em;
+	margin-bottom: 6em;
+}
+
+.artikel4 {
+	grid-column: 2 / 5;
+}
+
+.artikel4 h2 {
+	
+	text-align: center;
+} 
+
+/*knap */
+.containertilmeld input[type=submit] {
+	display: block;
+	Padding:1em;
+	background-color: #00B4CC;
+	border-radius: 25px;
+	width: 7em;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.containertilmeld input[type=submit]:hover {
+	background-color:#005F6B;
+}
+
+.containertilmeld input[type=text], input[type=tel], input[type=email], input[type=date]{
+	width:100%;
+	margin-top:1em;
+	margin-bottom: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
