@@ -42,13 +42,15 @@ footer{
 
 .footermail{
 	flex: 0;
-	margin-right: 15%;
+	padding: 0 15% 0 2%;
 }
 
-.fab{
-	line-height: 1.8;
-	font-size: 1.5em;
+.some{
+	line-height: 2.8;
+	font-size: 1.4em;
 	margin-left: 2%;
+	grid-column: 4/5;
+	grid-row: 4;
 }
 		
 
@@ -61,13 +63,13 @@ footer{
   grid-auto-rows: minmax(80px, auto);
 }
 
-.menu-wrap{
-	grid-column: 2/4;
+nav{
+	grid-column: 1/5;
 	grid-row: 1;
 }
 
 header{
-	grid-column: 2/4;
+	grid-column: 1/5;
 	grid-row: 2;
 }
 
@@ -88,6 +90,13 @@ footer{
 	grid-column: 1/5;
 	grid-row: 5;
 }
+
+.some{
+	grid-column: 4/5;
+	grid-row: 5;
+	float:right;
+	}	
+	
 		
 }
 
