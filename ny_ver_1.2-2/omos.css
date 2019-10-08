@@ -2,9 +2,6 @@
 /* CSS Document */
 
 
-body{
-	margin: 0;
-}
 
 #Omosmain{
 	display: grid;
@@ -19,11 +16,11 @@ body{
     grid-auto-rows: minmax(100px, auto);
 } */
 
-
-.Overskrift {
-	font-size: 30px;
-	margin-top: -20px;
+header h1 {
+	text-align: center;
+	color: #FFA500;
 }
+
 .Omos1 {
 	
 	grid-column: 1 / 5;
@@ -43,11 +40,7 @@ h2{
 	
 	
 }
-.Overskrift{
-color: #FFA500;
-margin-left: 32%;
-	margin-top: 10%;
-}
+
 
 .containeromos {
 	grid-column: 1 / 5;
@@ -69,20 +62,7 @@ margin-left: 32%;
 		margin-left: 13%;
 	}
 
-.OmHopla h1 {
-	font-size: 100px;
-	grid-column: 3 / 4;
-}
 
-	.Overskrift {
-		font-size: 50px;
-		margin-top: 50px;
-		grid-column: 2 / 4;
-		margin-left: 40%;
-		color: #FFA500;
-		
-		
-	}	
 
 	.Omos1 img{ 
 		width: 70%;
