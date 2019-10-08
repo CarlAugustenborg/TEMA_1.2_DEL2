@@ -8,7 +8,9 @@ h1 {
 }
 
 
-
+p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";  /*ændrer skrifttypen på alle p tags på alle sider*/
+}
 
 
 #logo{
