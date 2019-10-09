@@ -22,10 +22,10 @@ main img{
   	margin-left: auto;
   	margin-right: auto;
   	width: 90%;
+	height: 90%;
 	border-style: solid;
 	border-color: #FFA500;
 }
-
 
 
 h2{
@@ -71,6 +71,7 @@ main img{
  	 margin-right: auto;
 	margin-top: 5%;
   	width: 50%;
+	height: 50%;
 	border-style: solid;
 	border-color: #FFA500;
 }
