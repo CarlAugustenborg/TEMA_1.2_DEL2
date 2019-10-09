@@ -3,13 +3,13 @@
 /* --------NAV-BURGER----------------*/
 
 
-h1 {
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";  /* ændrer skrifttypen på alle overskrifter på alle sider */
+p {
+	font-family:font-family: 'Barlow', sans-serif;   /* ændrer skrifttypen på alle overskrifter på alle sider */
 }
 
 
-p {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";  /*ændrer skrifttypen på alle p tags på alle sider*/
+h1 {
+	font-family:'Mali', regular; ; /*ændrer skrifttypen på alle p tags på alle sider*/
 }
 
 
@@ -193,10 +193,10 @@ footer{
 }
 
 .footermail{
-	flex: 0;
-	margin-right: 15%;
+	display: flex;
+	flex-direction: column;
 	color: black;
-	margin-left: 5%;
+	margin-left:5%;
 	
 }
 
@@ -211,6 +211,7 @@ footer{
 	display:inline-flex;
 	flex-direction: row;
 	grid-column: 4 / 5;
+	
 }
 
 
@@ -260,4 +261,8 @@ margin-top: 8px;
 	margin-left: 40%;
 }
 	
+
+
+		
+	}
 }

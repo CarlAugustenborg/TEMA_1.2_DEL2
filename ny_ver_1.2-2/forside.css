@@ -10,14 +10,6 @@
     grid-auto-rows: minmax(100px, auto);
 }
 
-nav{
-	border: solid transparent 2px;
-	border-bottom-color: #707070;
-	height: 40px;
-	grid-column: 1/5;
-	grid-row: 1;
-}
-
 
 main{
 	grid-column: 1/5;
@@ -26,23 +18,15 @@ main{
 }
 
 main img{
-	 display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 90%;
 	border-style: solid;
 	border-color: #FFA500;
 }
 
 
-footer{
-	grid-column: 1/5;
-	grid-row: 4;
-	border: solid transparent 2px;
-	border-top-color: #707070;
-	color: #707070;	
-	display: flex;
-}
 
 h2{
 	margin: 2% 0 0 5%;
@@ -83,10 +67,10 @@ h2{
 	
 main img{
 	 display: block;
-  margin-left: auto;
-  margin-right: auto;
+ 	 margin-left: auto;
+ 	 margin-right: auto;
 	margin-top: 5%;
-  width: 50%;
+  	width: 50%;
 	border-style: solid;
 	border-color: #FFA500;
 }
@@ -95,6 +79,4 @@ main img{
 }
 
 
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
 }

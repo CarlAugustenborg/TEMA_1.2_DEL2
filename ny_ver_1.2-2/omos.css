@@ -9,12 +9,6 @@
 		
 }
 
-/*#wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-} */
 
 header h1 {
 	text-align: center;
@@ -47,7 +41,7 @@ h2{
 	background: #FFFFFF;
 	border-radius: 5px;
 	padding:3em;
-	margin-bottom: 12em;
+	margin-bottom: 4em;
 	grid-column: 2/3;
 	margin-left: 0%;
 	margin-top: -10%;
@@ -71,6 +65,7 @@ h2{
 		grid-column: 1/5;
 		border-style: solid; 
 		border-color: #FFA500;
+		margin-bottom:5em;
 		}
 	.containeromos img{
 		width: 20%;

@@ -1,14 +1,21 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hold tilmelding</title>
-<script src="https://kit.fontawesome.com/80a8fd110f.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="menuny.css">
-<link rel="stylesheet" href="holdtilmeld.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://kit.fontawesome.com/80a8fd110f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="menuny.css">
+	<link rel="stylesheet" href="holdtilmeld.css">
+	
+	<title>Hold/pris</title>
+	
 </head>
 
 <body>
@@ -16,51 +23,47 @@
 <div id="wrapper">
 	
 	<nav role="navigation">
-  <div id="menuToggle">
+  			<div id="menuToggle">
 
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
-    
-    <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-    
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
+    <!-- laver en tjekbox som man skjuler i css -->
+				<input type="checkbox" />
 
-  <ul id="menu">
-      <a href="index.html"><li>Forside</li></a>
-      <a href="Om os.html"><li>Om os</li></a>
-      <a href="holdtilmelding.html"><li>Hold/pris</li></a>
-      <a href="aktiviteter.html"><li>Aktiviteter</li></a>
-	  <a href="kontakt.html"><li>Kontakt</li></a>
-	  <a href="tilmeld.html"><li>Tilmeld</li></a>
-    </ul>
-  </div>
-		<a href="index.html"> <img src="billeder/Hopla_logo.png" alt="logo"> </a>
-</nav>
+				<!-- stregerne i hamburger menuen-->
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<!-- menu elementerne som senere bliver skjult indtil der klikkes på checkboxen -->
+
+			  	<ul id="menu">
+				  <a href="index.html"><li>Forside</li></a>
+				  <a href="Om os.html"><li>Om os</li></a>
+				  <a href="holdtilmelding.html"><li>Hold/pris</li></a>
+				  <a href="aktiviteter.html"><li>Aktiviteter</li></a>
+				  <a href="kontakt.html"><li>Kontakt</li></a>
+				  <a href="tilmeld.html"><li>Tilmeld</li></a>
+				</ul>
+  			</div>
 		
+		
+		<!-- logo billedet  ved siden af menuen -->
+		<a href="index.html"> <img src="billeder/Hopla_logo.png" alt="logo"> </a>
+	</nav>
+	
+	
+	<!-- header med overskrft på undersiden-->
 	<header class="tilmeldheader">
 		<h1>Holdbeskrivelser</h1>
 	</header>
 	
+	
+	<!-- main section, med undersektioner og artikler-->
 	<main id="tilmeldmain">
 	<section class="tilmeldhold">
 						<img class="billede" src="billeder/haletudser.jpg" alt="gymnastik billede">
 							<section class="lillesek">
 								<article class="artikel17">
-								<h3>Haletudser</h3>
+									<h3>Haletudser</h3>
 									<h4>Alder:</h4>
 									<p>1-3 år med forældre</p>
 									<h4>Tid:</h4>
@@ -69,20 +72,18 @@
 									<p>1000 kr.</p>
 									<h4>Beskrivelse:</h4>
 									<p>Dette hold, er for småbørn med deres forældre, hvor forældrene hjælper og deltager aktivt på holdet med deres barn. Barnet får trænet sine balancesans, blandt andet ved kolbøtter, samt at få brugt deres følesans. Barnet skal kunne gå stabilt for at deltage.</p>
-
-									
-							</article>	
-							<article class="knap">
-								<a href="tilmeld.html">Tilmeld</a>		
-							</article>
-			</section>
-		</section>	
+								</article>	
+								<article class="knap">
+									<a href="tilmeld.html">Tilmeld</a>		
+								</article>
+							</section>
+	</section>	
 		
 		<section class="tilmeldhold">
 						<img class="billede" src="billeder/tumlinge.jpg" alt="gymnastik billede">
 							<section class="lillesek">
 								<article class="artikel17">
-								<h3>Tumlinger</h3>
+									<h3>Tumlinger</h3>
 									<h4>Alder:</h4>
 									<p>3-5 år</p>
 									<h4>Tid:</h4>
@@ -91,20 +92,18 @@
 									<p>1000 kr.</p>
 									<h4>Beskrivelse:</h4>
 									<p>På dette hold lærer vi en masse redskaber af kende, og udvikler vores motoriske færdigheder. Vi kommer til at høre god måske, hvor vi kravler, ruller, tonser og danser rundt, og vi får udfordret os selv på forskellige måder.</p>
-
-									
-							</article>	
-							<article class="knap">
-								<a href="tilmeld.html">Tilmeld</a>		
-							</article>
-			</section>
+								</article>	
+								<article class="knap">
+									<a href="tilmeld.html">Tilmeld</a>		
+								</article>
+							</section>
 		</section>	
 		
 		<section class="tilmeldhold">
 						<img class="billede" src="billeder/krudtugler.jpg" alt="gymnastik billede">
 							<section class="lillesek">
 								<article class="artikel17">
-								<h3>Krudtugler</h3>
+									<h3>Krudtugler</h3>
 									<h4>Alder:</h4>
 									<p>5-7 år</p>
 									<h4>Tid:</h4>
@@ -113,20 +112,18 @@
 									<p>1000 kr.</p>
 									<h4>Beskrivelse:</h4>
 									<p>Dette hold fokusere på at vi udvikler os og lærer nye ting. Der er fokus på balanceevnen og at vi begynder at kunne lære f.eks. At stå på hænder, med start ved at gøre det op ad muren. Derudover fokusere vi på at bruge forskellige redskaber og lære dem af kende.  Derudover vil der være opvisninger hvor de viser hvad de har lært.</p>
-
-									
-							</article>	
-							<article class="knap">
-								<a href="tilmeld.html">Tilmeld</a>		
-							</article>
-			</section>
+								</article>	
+								<article class="knap">
+									<a href="tilmeld.html">Tilmeld</a>		
+								</article>
+							</section>
 		</section>	
 		
 		<section class="tilmeldhold">
 						<img class="billede" src="billeder/springmus.jpg" alt="gymnastik billede">
 							<section class="lillesek">
 								<article class="artikel17">
-								<h3>Spring mus</h3>
+									<h3>Spring mus</h3>
 									<h4>Alder:</h4>
 									<p>7-11 år</p>
 									<h4>Tid:</h4>
@@ -135,20 +132,18 @@
 									<p>1000 kr.+ pris på dragt 300kr.</p>
 									<h4>Beskrivelse:</h4>
 									<p>Kom og vær med til springgymnastik med os. På dette hold arbejder vi videre med vores grundspring og kommer til at lærer nogle vildere spring og tricks. Det er bedst hvis barnet har gået til springgymnastik før, men der bliver taget højde for hvis de ikke har. Det hele leder op til en flot opvisning, hvor børnene viser hvad de kan og har lært.  </p>
-
-									
-							</article>	
-							<article class="knap">
-								<a href="tilmeld.html">Tilmeld</a>		
-							</article>
-			</section>
+								</article>	
+								<article class="knap">
+									<a href="tilmeld.html">Tilmeld</a>		
+								</article>
+							</section>
 		</section>	
 		
 		<section class="tilmeldhold">
 						<img class="billede" src="billeder/springmix.jpg" alt="gymnastik billede">
 							<section class="lillesek">
 								<article class="artikel17">
-								<h3>Spring mix</h3>
+									<h3>Spring mix</h3>
 									<h4>Alder:</h4>
 									<p>12-15 år</p>
 									<h4>Tid:</h4>
@@ -157,31 +152,30 @@
 									<p>1000 kr.+ pris på dragt 300kr.</p>
 									<h4>Beskrivelse:</h4>
 									<p>Dette hold er for dem der gerne vil blive bedre til springgymnastik, eller begynde på det. Der vil blive arbejdet med at kunne lave vildere spring, gå på hænder og lave flik-flak. Det anbefales at man har gået til det før, da det er sværere spring vi arbejder med. Det hele leder op til en flot opvisning, hvor de viser hvad de har lært. Og de vil skulle have matchende dragter på, som ville kunne købes her. </p>
-
-									
-							</article>	
-							<article class="knap">
-								<a href="tilmeld.html">Tilmeld</a>		
-							</article>
-			</section>
+								</article>	
+								<article class="knap">
+									<a href="tilmeld.html">Tilmeld</a>		
+								</article>
+							</section>
 		</section>	
 		
 		
 		
 		
 				
-	</main>
+		</main>
 	
+	<!--footer med mail og facebook logo og instagramlogo-->
+		<footer>
+			<h4 class="footermail">springgymnastik@hopla.dk</h4>
+			<div class="face">
+				<a class="fab" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+				<a class="fab" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+			</div>
+		</footer>
 	
-	<footer>
-		<h4 class="footermail">springgymnastik@hopla.dk</h4>
-		
-		<div class="face">
-		<a class="fab" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-		<a class="fab" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-		</div>
-	</footer>
 	</div> <!-- END WRAPPER-->
+
 </body>
 </html>
 
