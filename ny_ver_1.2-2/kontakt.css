@@ -35,7 +35,6 @@ main{
 }
 main img {
 	max-width: 99%;
-	max-height: auto;
 	border-style: solid;
 	border-color:#FFA500
 }
