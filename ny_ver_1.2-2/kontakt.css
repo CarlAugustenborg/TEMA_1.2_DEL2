@@ -2,9 +2,6 @@
 /* CSS Document */
 
 
-body{
-	margin: 0;
-}
 
 #wrapper{
     display: grid;
@@ -13,8 +10,14 @@ body{
     /*grid-auto-rows: minmax(100px, auto);*/
 }
 
+header {
+	grid-column: 1 / 5;
+	grid-row: 2;
+	
+}
 
-main h2 {
+
+header h1 {
 	text-align: center;
 	color:#FFA500
 }
@@ -27,7 +30,7 @@ p {
 }
 main{
 	grid-column: 1/5;
-	grid-row: 2;
+	grid-row: 3;
 }
 main img {
 	max-width: 99%;
@@ -47,10 +50,6 @@ main img {
   grid-auto-rows: minmax(80px, auto);
 }
 
-.menu-wrap{
-	grid-column: 2/4;
-	grid-row: 1;
-}
 
 
 
@@ -60,7 +59,7 @@ section{
 }
 main{
 	grid-column: 2/4;
-	grid-row: 2;
+	
 }
 article{
 	grid-column: 2/3;
@@ -77,49 +76,4 @@ main img {
     float: right;
     margin-top: -350px;
 }
-}
-/*tilmeld css*/
-
-#tildmeldsec {
-	display:grid;
-	grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-}
-.containertilmeld {
-	background:rgba(247,0,4,1.00);
-	border-radius: 5px;
-	padding:3em;
-	margin-bottom: 6em;
-}
-
-.artikel4 {
-	grid-column: 2 / 5;
-}
-
-.artikel4 h2 {
-	
-	text-align: center;
-} 
-
-/*knap */
-.containertilmeld input[type=submit] {
-	display: block;
-	Padding:1em;
-	background-color: #00B4CC;
-	border-radius: 25px;
-	width: 7em;
-	margin-right: auto;
-	margin-left: auto;
-	
-}
-
-.containertilmeld input[type=submit]:hover {
-	background-color:#005F6B;
-}
-
-.containertilmeld input[type=text], input[type=tel], input[type=email], input[type=date]{
-	width:100%;
-	margin-top:1em;
-	margin-bottom: 2em;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
 }
